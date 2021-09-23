@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(205, 221, 233);
+}
+
+.profile {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.645);
+  width: 350px;
+  height: 550px;
+}
+
+.description {
+}
+
+.avatar {
+  margin-top: 10px;
+  max-width: 350px;
+}
+
+.name {
+  align-items: center;
+  justify-content: center;
+}
+
+.tag {
+  margin-top: 10px;
+  max-width: 350px;
+}
+
+.location {
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 249, 255);
+}
+
+.label {
+  display: flex;
+  border-radius: 1px;
+}
+
+.quantity {
+}

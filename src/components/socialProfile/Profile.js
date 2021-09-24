@@ -1,5 +1,5 @@
 import defaultImages from "./defaultImages.jpg";
-import style from "./profile.css";
+import "./Profile.css";
 
 export default function Profile({
   userAvatar = defaultImages,
@@ -15,7 +15,7 @@ export default function Profile({
       <div className="description">
         <img src={userAvatar} alt={userName} className="avatar" />
         <p className="name">{userName}</p>
-        <p className="tag">{userTag}</p>
+        <p className="tag">@{userTag}</p>
         <p className="location">{userLocation}</p>
       </div>
       <ul className="stats">

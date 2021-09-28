@@ -1,26 +1,27 @@
-import Profile from "./components/socialProfile/Profile";
-import user from "./components/socialProfile/user.json";
+import Profile from "./components/Profile/Profile";
+import user from "./data/user.json";
 
-import Statistics from "./components/statistics/Statistics";
-import statistics from "./components/statistics/statistical-data.json";
+import Statistics from "./components/Statistics/Statistics";
+import statistics from "./data/statistical-data.json";
 
-import FriendList from "./components/friend-list/FriendList";
-import friends from "./components/friend-list/friends.json";
+import FriendList from "./components/FriendList/FriendList";
+import friends from "./data/friends.json";
 
-import TransactionHistory from "./components/transaction-history/TransactionHistory";
-import transactions from "./components/transaction-history/transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactions from "./data/transactions.json";
 
 export default function App() {
   return (
     <div>
       <Profile
-        userAvatar={user.avatar}
-        userName={user.name}
-        userTag={user.tag}
-        userLocation={user.location}
-        userFollowers={user.stats.followers}
-        userViews={user.stats.views}
-        userLikes={user.stats.likes}
+        // avatar={user.avatar}
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        stats={user.stats}
+        // followers={user.stats.followers}
+        // views={user.stats.views}
+        // likes={user.stats.likes}
       />
       <Statistics stats={statistics} />
       <FriendList friends={friends} />
